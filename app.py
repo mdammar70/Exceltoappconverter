@@ -4,7 +4,7 @@ import plotly.express as px
 from PIL import Image
 
 st.set_page_config(page_title='Survey Results')
-st.header('Survey Results 2021')
+st.header('Excel To Web App')
 
 
 ### --- LOAD DATAFRAME
@@ -58,7 +58,6 @@ st.plotly_chart(bar_chart)
 col1, col2 = st.beta_columns(2)
 image = Image.open('images/survey.jpg')
 col1.image(image,
-        caption='Designed by slidesgo / Freepik',
         use_column_width=True)
 col2.dataframe(df[mask])
 
