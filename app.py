@@ -68,3 +68,4 @@ pie_chart = px.pie(df_participants,
                 names='Departments')
 
 st.plotly_chart(pie_chart)
+st.markdown('Developed By **_Mohd Ammar, Yugesh, Hemanth_**.')
